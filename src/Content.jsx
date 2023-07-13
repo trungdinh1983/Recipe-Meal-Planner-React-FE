@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { IngredientsIndex } from "./IngredientsIndex";
+import { Signup } from "./Signup";
+import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 
 export function Content() {
   const [ingredients, setIngredients] = useState([]);
@@ -17,6 +20,9 @@ export function Content() {
   return (
     <div>
       <IngredientsIndex />
+      <Signup />
+      <Login />
+      <LogoutLink />
     </div>
   );
 }
