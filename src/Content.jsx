@@ -27,6 +27,23 @@ export function Content() {
     setCurrentIngredient(ingredient);
   };
 
+  const handleUpdateIngredient = (id, params, successCallback) => {
+    console.log("handleUpdateIngredient", params);
+    axios.patch(`http://localhost:3000/ingredients/${id}.json`, params).then((response) => {
+      setIngredients(
+        ingredients.map((ingredient) => {
+          if (ingredient.id === response.data.id) {
+            return response.data;
+          } else {
+            return ingredient;
+          }
+        })
+      );
+      successCallback();
+      handleClose();
+    });
+  };
+
   const handleCreateIngredient = (params, successCallback) => {
     console.log("handleCreateIngredient", params);
     axios.post("http://localhost:3000/ingredients.json", params).then((response) => {
@@ -51,7 +68,8 @@ export function Content() {
 
       <Modal show={isIngredientsShowVisible} onClose={handleClose}>
         <h1>Test</h1>
-        <IngredientsShow ingredient={currentIngredient} />
+
+        <IngredientsShow ingredient={currentIngredient} onUpdateIngredient={handleUpdateIngredient} />
       </Modal>
     </div>
   );
