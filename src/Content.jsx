@@ -6,6 +6,7 @@ import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
 import { IngredientsShow } from "./IngredientsShow";
 import { Modal } from "./Modal";
+import { IngredientsNew } from "./IngredientsNew";
 
 export function Content() {
   const [ingredients, setIngredients] = useState([]);
@@ -26,6 +27,14 @@ export function Content() {
     setCurrentIngredient(ingredient);
   };
 
+  const handleCreateIngredient = (params, successCallback) => {
+    console.log("handleCreateIngredient", params);
+    axios.post("http://localhost:3000/ingredients.json", params).then((response) => {
+      setIngredients([...ingredients, response.data]);
+      successCallback();
+    });
+  };
+
   const handleClose = () => {
     console.log("handleClose");
     setIsIngredientsShowVisible(false);
@@ -37,7 +46,7 @@ export function Content() {
       <Signup />
       <Login />
       <LogoutLink />
-
+      <IngredientsNew onCreateIngredient={handleCreateIngredient} />
       <IngredientsIndex ingredients={ingredients} onShowIngredient={handleShowIngredient} />
 
       <Modal show={isIngredientsShowVisible} onClose={handleClose}>
