@@ -13,7 +13,7 @@ export function IngredientsNew(props) {
           Name: <input name="name" type="text" />
         </div>
         <div>
-          Image Url: <input name="url" type="text" />
+          Image Url: <input name="image_url" type="text" />
         </div>
 
         <button type="submit">Create ingredient</button>

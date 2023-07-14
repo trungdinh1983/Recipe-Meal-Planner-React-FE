@@ -5,7 +5,7 @@ export function IngredientsIndex(props) {
     <div>
       <h1>All ingredients</h1>
       <div>
-        Search filter:
+        Search ingredients:
         <input type="text" value={searchFilter} onChange={(event) => setSearchFilter(event.target.value)} />
       </div>
       {props.ingredients

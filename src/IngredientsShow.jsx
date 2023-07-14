@@ -19,7 +19,7 @@ export function IngredientsShow(props) {
           Name: <input defaultValue={props.ingredient.name} name="name" type="text" />
         </div>
         <div>
-          Url: <input defaultValue={props.ingredient.url} name="url" type="text" />
+          Url: <input defaultValue={props.ingredient.image_url} name="image_url" type="text" />
         </div>
 
         <button type="submit">Update ingredient</button>
