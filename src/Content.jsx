@@ -22,6 +22,13 @@ export function Content() {
     });
   };
 
+  const handleIngredientSearch = () => {
+    axios.get("http://localhost:3000/ingredients.json").then((response) => {
+      console.log(response.data);
+      setIngredienets(response.data);
+    });
+  };
+
   const handleShowIngredient = (ingredient) => {
     console.log("handleShowIngredient", ingredient);
     setIsIngredientsShowVisible(true);
@@ -82,8 +89,13 @@ export function Content() {
       <LogoutLink />
       <IngredientsNew onCreateIngredient={handleCreateIngredient} />
       <IngredientsIndex ingredients={ingredients} onShowIngredient={handleShowIngredient} />
+
       <Modal show={isIngredientsShowVisible} onClose={handleClose}>
-        <IngredientsShow ingredient={currentIngredient} onUpdateIngredient={handleUpdateIngredient} />
+        <IngredientsShow
+          ingredient={currentIngredient}
+          onUpdateIngredient={handleUpdateIngredient}
+          onDestroyIngredient={handleDestroyIngredient}
+        />
         <PantryItemNew ingredient={currentIngredient} onCreatePantryitem={handleCreatePantryItem} />
       </Modal>
     </div>
