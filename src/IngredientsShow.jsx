@@ -12,14 +12,15 @@ export function IngredientsShow(props) {
   return (
     <div>
       <h1>Ingredient information</h1>
-      <p>Name: {props.ingredient.name}</p>
-      <p>Image: {props.ingredient.image_url}</p>
+      <p>Current Ingredient: {props.ingredient.name}</p>
+      <img src={props.ingredient.image_url} />
+      <p>Image Url: {props.ingredient.image_url}</p>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input defaultValue={props.ingredient.name} name="name" type="text" />
+          Change Name: <input defaultValue={props.ingredient.name} name="name" type="text" />
         </div>
         <div>
-          Url: <input defaultValue={props.ingredient.image_url} name="image_url" type="text" />
+          Change Url: <input defaultValue={props.ingredient.image_url} name="image_url" type="text" />
         </div>
 
         <button type="submit">Update ingredient</button>
