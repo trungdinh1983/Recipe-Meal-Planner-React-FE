@@ -7,6 +7,7 @@ import { LogoutLink } from "./LogoutLink";
 import { IngredientsShow } from "./IngredientsShow";
 import { Modal } from "./Modal";
 import { IngredientsNew } from "./IngredientsNew";
+import { PantryItemNew } from "./PantryItemNew";
 
 export function Content() {
   const [ingredients, setIngredients] = useState([]);
@@ -57,6 +58,22 @@ export function Content() {
     setIsIngredientsShowVisible(false);
   };
 
+  const handleDestroyIngredient = (ingredient) => {
+    console.log("handleDestroyIngredient", ingredient);
+    axios.delete(`http://localhost:3000/ingredients/${ingredient.id}.json`).then((response) => {
+      setIngredients(ingredients.filter((p) => p.id !== ingredient.id));
+      handleClose();
+    });
+  };
+
+  const handleCreatePantryItem = (params, successCallback) => {
+    console.log("handleCreatePantryItem", params);
+    axios.post("http://localhost:3000/pantry_items.json", params).then((response) => {
+      // setPantryitems([...pantryitems, response.data]);
+      successCallback();
+    });
+  };
+
   useEffect(handleIndexIngredients, []);
   return (
     <div>
@@ -65,11 +82,9 @@ export function Content() {
       <LogoutLink />
       <IngredientsNew onCreateIngredient={handleCreateIngredient} />
       <IngredientsIndex ingredients={ingredients} onShowIngredient={handleShowIngredient} />
-
       <Modal show={isIngredientsShowVisible} onClose={handleClose}>
-        <h1>Test</h1>
-
         <IngredientsShow ingredient={currentIngredient} onUpdateIngredient={handleUpdateIngredient} />
+        <PantryItemNew ingredient={currentIngredient} onCreatePantryitem={handleCreatePantryItem} />
       </Modal>
     </div>
   );
