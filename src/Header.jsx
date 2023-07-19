@@ -15,11 +15,11 @@ export function Header() {
             <button class="dropbtn">Recipes</button>
             <div class="dropdown-content">
               <a href="src/spaghetti.html">Spaghetti Meatball</a>
-              <a href="#">Burger</a>
-              <a href="#">Hot Dog</a>
-              <a href="#">Shortrib</a>
-              <a href="#">Grill Steak</a>
-              <a href="#">Mango Salsa</a>
+              <a href="src/burger.html">Hamburger</a>
+              <a href="src/hotdog.html">Hot Dog</a>
+              <a href="src/shortrib.html">Shortrib</a>
+              <a href="src/grillsteak.html">Grill Steak</a>
+              <a href="src/mangosalsa.html">Mango Salsa</a>
             </div>
           </div>
         </nav>
