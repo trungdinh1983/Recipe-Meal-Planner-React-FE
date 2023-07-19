@@ -7,8 +7,9 @@ img{
   height: 100px;
 } */
 
-body {width: 100%; 
-
+body {width: 60%; 
+  margin-left: auto;
+  margin-right: auto;
   background-size: 93px 166px; 
   background: url('https://i.stack.imgur.com/LCCB6.jpg') repeat; 
  }

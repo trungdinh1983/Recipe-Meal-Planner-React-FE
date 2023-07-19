@@ -28,3 +28,17 @@
   top: 0em;
   right: 0.2em;
 }
+
+img {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 40%; */
+}
+
+* {
+
+  text-align: center;
+  
+  }
+

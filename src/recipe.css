@@ -1,7 +1,22 @@
 .background {width: 100%; 
 
+  background-size: 203px 166px; 
+  background: url('https://i.stack.imgur.com/LCCB6.jpg');
+  background-repeat: repeat;
+ }
+
+ body {width: 60%; 
+  margin-left: auto;
+  margin-right: auto;
   background-size: 93px 166px; 
   background: url('https://i.stack.imgur.com/LCCB6.jpg') repeat; 
  }
 
 
+img{
+  max-width: 300px;
+  height: auto;
+}
+
+ /* debugger code */
+ /* *{ border: 1px solid red; } */

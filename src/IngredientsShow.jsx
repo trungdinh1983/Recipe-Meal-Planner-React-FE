@@ -13,7 +13,7 @@ export function IngredientsShow(props) {
     <div>
       <h1>Ingredient information</h1>
       <p>Current Ingredient: {props.ingredient.name}</p>
-      <img src={props.ingredient.image_url} />
+      <img src={props.ingredient.image_url} width="400" height="400" alt="Recipe Meal Planner" />
       <p>Image Url: {props.ingredient.image_url}</p>
       <form onSubmit={handleSubmit}>
         <div>

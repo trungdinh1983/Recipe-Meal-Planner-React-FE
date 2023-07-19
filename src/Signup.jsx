@@ -22,8 +22,14 @@ export function Signup() {
   };
 
   return (
-    <div id="signup" style={{ backgroundColor: "yellow", color: "green" }}>
-      <h1>Signup</h1>
+    <div
+      id="signup"
+      style={{
+        backgroundImage: `url("https://elements-cover-images-0.imgix.net/bf05d8c8-bd13-4c2a-9329-aa76deacde7c?auto=compress%2Cformat&fit=max&w=1370&s=2795a8febe3c146bc9b4ca3e065cc496")`,
+        color: "red",
+      }}
+    >
+      <h1>Sign Up</h1>
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
@@ -42,7 +48,15 @@ export function Signup() {
         <div>
           Password confirmation: <input name="password_confirmation" type="password" />
         </div>
-        <button type="submit">Signup</button>
+        <button
+          type="submit"
+          style={{
+            backgroundImage: `url("https://elements-cover-images-0.imgix.net/bf05d8c8-bd13-4c2a-9329-aa76deacde7c?auto=compress%2Cformat&fit=max&w=1370&s=2795a8febe3c146bc9b4ca3e065cc496")`,
+            color: "red",
+          }}
+        >
+          Signup
+        </button>
       </form>
     </div>
   );

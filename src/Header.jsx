@@ -8,13 +8,20 @@ export function Header() {
             <img src="https://images.cooltext.com/5664735.gif" width="675" height="88" alt="Recipe Meal Planner" />
           </a>
           <br />
-          Text by <a href="https://cooltext.com">Cooltext.com</a>
+          <font size="1">
+            Text by
+            <a href="https://cooltext.com">Cooltext.com</a>
+          </font>
           <br />
           <br />
           <div class="dropdown">
-            <button class="dropbtn">Recipes</button>
+            <button class="dropbtn">
+              <img src="https://images.cooltext.com/5664745.gif"></img>
+            </button>
+
             <div class="dropdown-content">
               <a href="src/spaghetti.html">Spaghetti Meatball</a>
+
               <a href="src/burger.html">Hamburger</a>
               <a href="src/hotdog.html">Hot Dog</a>
               <a href="src/shortrib.html">Shortrib</a>
