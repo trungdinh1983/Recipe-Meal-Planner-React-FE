@@ -6,8 +6,8 @@ export function IngredientsNew(props) {
   };
 
   return (
-    <div>
-      <h1>New Ingredient</h1>
+    <div style={{ backgroundColor: "orange", color: "red" }}>
+      <h1>Add New Ingredient</h1>
       <form onSubmit={handleSubmit}>
         <div>
           Name: <input name="name" type="text" />
@@ -16,7 +16,9 @@ export function IngredientsNew(props) {
           Image Url: <input name="image_url" type="text" />
         </div>
 
-        <button type="submit">Create ingredient</button>
+        <button type="submit" style={{ color: "red" }}>
+          Create ingredient
+        </button>
       </form>
     </div>
   );
