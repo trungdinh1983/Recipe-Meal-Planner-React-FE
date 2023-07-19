@@ -7,7 +7,17 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
+  background: url(' https://i.stack.imgur.com/LCCB6.jpg') repeat; 
 }
+
+
+Light Background
+https://i.stack.imgur.com/LCCB6.jpg
+
+
+
+Dark Background
+https://wallpaperaccess.com/full/2153948.png
 
 .modal-main {
   position: fixed;
