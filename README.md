@@ -34,7 +34,7 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
 
 <br />
 <div align="center">
- [https://github.com/trungdinh1983/Recipe-Meal-Planner-React-FE/](https://github.com/trungdinh1983/Recipe-Meal-Planner-React-FE/)">
+ [https://github.com/trungdinh1983/Recipe-Meal-Planner-React-FE/] (https://github.com/trungdinh1983/Recipe-Meal-Planner-React-FE/)">
 
 
 <h3 align="center">Recipe Meal Planner/h3>
