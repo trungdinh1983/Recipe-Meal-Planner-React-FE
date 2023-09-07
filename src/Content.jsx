@@ -16,14 +16,14 @@ export function Content() {
 
   const handleIndexIngredients = () => {
     console.log("handleIndexIngredients");
-    axios.get("http://localhost:3000/ingredients.json").then((response) => {
+    axios.get("/ingredients.json").then((response) => {
       console.log(response.data);
       setIngredients(response.data);
     });
   };
 
   const handleIngredientSearch = () => {
-    axios.get("http://localhost:3000/ingredients.json").then((response) => {
+    axios.get("/ingredients.json").then((response) => {
       console.log(response.data);
       setIngredienets(response.data);
     });
@@ -37,7 +37,7 @@ export function Content() {
 
   const handleUpdateIngredient = (id, params, successCallback) => {
     console.log("handleUpdateIngredient", params);
-    axios.patch(`http://localhost:3000/ingredients/${id}.json`, params).then((response) => {
+    axios.patch(`/ingredients/${id}.json`, params).then((response) => {
       setIngredients(
         ingredients.map((ingredient) => {
           if (ingredient.id === response.data.id) {
@@ -54,7 +54,7 @@ export function Content() {
 
   const handleCreateIngredient = (params, successCallback) => {
     console.log("handleCreateIngredient", params);
-    axios.post("http://localhost:3000/ingredients.json", params).then((response) => {
+    axios.post("/ingredients.json", params).then((response) => {
       setIngredients([...ingredients, response.data]);
       successCallback();
     });
@@ -67,7 +67,7 @@ export function Content() {
 
   const handleDestroyIngredient = (ingredient) => {
     console.log("handleDestroyIngredient", ingredient);
-    axios.delete(`http://localhost:3000/ingredients/${ingredient.id}.json`).then((response) => {
+    axios.delete(`/ingredients/${ingredient.id}.json`).then((response) => {
       setIngredients(ingredients.filter((p) => p.id !== ingredient.id));
       handleClose();
     });
