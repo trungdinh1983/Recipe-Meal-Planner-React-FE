@@ -23,7 +23,7 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![LinkedIn][linkedin-shield]][linkedin.com/in/trungdinh1983]
+[![LinkedIn][linkedin-shield][linkedin.com/in/trungdinh1983]
 
 
 
