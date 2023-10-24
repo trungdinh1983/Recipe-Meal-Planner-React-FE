@@ -63,7 +63,8 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">Recipe Meal Planner
+</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -86,8 +87,10 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Recipe Meal Planner
+-->
+## Recipe Meal Planner
+
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -99,14 +102,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+Backend: Ruby on Rails (MVC architecture)
+Frontend: React.js, Bootstrap
+Package Management: npm, webpack
+Authentication: JSON Web Tokens (JWT)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
