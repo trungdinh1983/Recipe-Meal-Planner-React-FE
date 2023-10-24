@@ -95,8 +95,11 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
 ### Built With
 
 Backend: Ruby on Rails (MVC architecture)
+<br />
 Frontend: React.js, Bootstrap
+<br />
 Package Management: npm, webpack
+<br />
 Authentication: JSON Web Tokens (JWT)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -104,18 +107,10 @@ Authentication: JSON Web Tokens (JWT)
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## About The Project
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Recipe Meal Planner is an app that manages your pantry inventory and generates a grocery list based on your meal plans. It's a full-stack application with a frontend built using React.js and a backend RESTful API developed with Ruby on Rails.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
