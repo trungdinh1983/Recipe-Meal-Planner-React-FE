@@ -132,7 +132,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/trungdinh1983/Recipe-Meal-Planner-React-FE
    ```
-3. Install NPM packages
+3. npm install npm@latest -g
    ```sh
    npm install
    ```
