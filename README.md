@@ -123,11 +123,11 @@ Recipe Meal Planner is an app that manages your pantry inventory and generates a
    ```sh
    git clone https://github.com/trungdinh1983/Recipe-Meal-Planner-API
    ``` 
-3. npm install npm@latest -g
+3. npm install npm@latest -g (BackEnd)
    ```sh
    npm install
    ```
-3. npm install npm create vite@latest
+3. npm install npm create vite@latest(Front End)
    ```sh
    npm create vite@latest
    ```
@@ -141,9 +141,9 @@ Recipe Meal Planner is an app that manages your pantry inventory and generates a
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+List features to be added and how you would implement.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
