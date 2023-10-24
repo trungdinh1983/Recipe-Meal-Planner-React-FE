@@ -83,9 +83,10 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
 ## Recipe Meal Planner
 
 
-[![Search Page][product-screenshot]]([https://example.com](https://media.licdn.com/dms/image/D562DAQHWJLMj7d1g7g/profile-treasury-image-shrink_800_800/0/1691772323581?e=1698789600&v=beta&t=gTpraVYbBrzJeUVXUL51vagBj7KuRUTmRZkpY2whZmw))
+![Search Page](https://media.licdn.com/dms/image/D562DAQHWJLMj7d1g7g/profile-treasury-image-shrink_800_800/0/1691772323581?e=1698789600&v=beta&t=gTpraVYbBrzJeUVXUL51vagBj7KuRUTmRZkpY2whZmw)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
