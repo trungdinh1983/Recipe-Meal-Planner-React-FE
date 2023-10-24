@@ -40,7 +40,7 @@ This is the frontend portion of Recipe Meal planner app. Please see  [Recipe-Mea
  [BackEnd] - (https://github.com/trungdinh1983/Recipe-Meal-Planner-API)
 
 
-<h3 align="center">Recipe Meal Planner/h3>
+<h3 align="center">Recipe Meal Planner<h3>
 
   <p align="center">
     project_description
